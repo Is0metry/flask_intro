@@ -1,0 +1,18 @@
+<!DOCTYPE html5>
+
+<head>
+    <title>Spam/Ham</title>
+</head>
+
+<body>
+    <h1>Enter Text and all will be revealed</h1>
+    <form method="POST" action="/">
+    <input type="text" name="txt_input"/>
+    <button type="submit">Predict</button>
+    </form>
+    <h2>{% if prediction%}
+        {{prediction}}
+        {% endif %}
+    </h2>
+    </body>
+</html>
